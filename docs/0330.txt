@@ -1,0 +1,16 @@
+employee db 설치 하기
+
+1. DB 및 계정 만들기(Workbench에서 DBA로 접속)
+create database employee;
+create user 'employee'@'localhost' identified by 'employee';
+grant all privileges on employee.* to 'employee'@'localhost';
+flush privileges;
+
+2. 접속 테스트 해보기
+Workbench에서 employee계정으로 employee DB 접속 해보기
+
+3. DB 인스톨 하기
+3-1
+employees_db.zip 압축 풀기
+3-2
+C:\employees_db> mysql -u employees -D employees -p < employees.sql
