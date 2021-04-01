@@ -1,4 +1,4 @@
-employee db 설치 하기
+==== employee db 설치 하기
 
 1. DB 및 계정 만들기(Workbench에서 DBA로 접속)
 create database employee;
