@@ -27,8 +27,8 @@ def deletebyemail(email):
 
         # SQL 실행
 
-        sql = "delete from emaillist where email = '{0}'".format(email)
-        count = cursor.execute(sql)
+        sql = "delete from emaillist where email = %s"
+        count = cursor.execute(sql, (email, ))
 
         # DB 반영
         db.commit()
